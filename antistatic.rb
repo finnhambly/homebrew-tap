@@ -5,20 +5,20 @@
 class Antistatic < Formula
   desc "CLI for Antistatic Exchange"
   homepage "https://antistatic.exchange"
-  version "0.7.8"
+  version "0.7.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.8/antistatic_0.7.8_darwin_amd64.tar.gz"
-      sha256 "4c2b8fdd9ae6a439afe23dc1c4d4f72adc4efabe049c649422c6c7f8774eab2f"
+      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.9/antistatic_0.7.9_darwin_amd64.tar.gz"
+      sha256 "85815050547312aaa2ddb553664447ddde01d28ae2e4a6bc3f6307e65774768d"
 
       define_method(:install) do
         bin.install "antistatic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.8/antistatic_0.7.8_darwin_arm64.tar.gz"
-      sha256 "2202407228761df22888feadad43a05f145d7b8b3eb054d288a8533d539a6f98"
+      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.9/antistatic_0.7.9_darwin_arm64.tar.gz"
+      sha256 "5190f6c26c46c3e48587f433fd901886537aa57e79eff7a0fa7c151360a13878"
 
       define_method(:install) do
         bin.install "antistatic"
@@ -28,15 +28,15 @@ class Antistatic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.8/antistatic_0.7.8_linux_amd64.tar.gz"
-      sha256 "a1426e356df0aea46b36432cee22924ae1750989c4fb41a41c03381405d3fec8"
+      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.9/antistatic_0.7.9_linux_amd64.tar.gz"
+      sha256 "d8507f52ad7477d33ec7206f8e338be2e0c164f7e1242d6b05bc9f43e79c793b"
       define_method(:install) do
         bin.install "antistatic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.8/antistatic_0.7.8_linux_arm64.tar.gz"
-      sha256 "0b14bc9c37e281c0439eac3123728b5d8117fd30fae94cc1c3ca38326c624869"
+      url "https://github.com/finnhambly/antistatic-cli/releases/download/v0.7.9/antistatic_0.7.9_linux_arm64.tar.gz"
+      sha256 "eb5beaf193b07157c4cf2dba6c6cdd581bb411b04789e6e5f10085f5fe42728a"
       define_method(:install) do
         bin.install "antistatic"
       end
